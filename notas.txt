@@ -1,0 +1,8 @@
+    <section id="portfolio">
+        <video autoplay muted loop id="vidfundo">
+            <source src="vid/demonia.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop id="vidfrente">
+            <source src="vid/demonia.mp4" type="video/mp4">
+        </video>
+    </section>

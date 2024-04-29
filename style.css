@@ -1,0 +1,814 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: 'kanit';
+    font-weight: bold;
+    font-size: 48px;
+
+    text-align: center;
+}
+
+h3 {
+    font-family: 'kanit';
+    font-weight: bold;
+    font-size: 36px;
+
+    text-align: center;
+}
+
+h4 {
+    font-family: 'titillium web';
+    font-weight: bold;
+    font-size: 36px;
+
+    text-align: center;
+}
+
+p {
+    font-family: 'noto sans';
+    font-weight: bold;
+    font-size: 20px;
+
+    text-align: center;
+
+    line-height: 35px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    
+    position: fixed;
+    top: 0;
+
+    z-index: 2;
+    
+    background-color: #1B1B1B;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+.container-header {
+    max-width: 1600px;
+    width: 80vw;
+    height: 100%;
+
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#tema-escuro {
+    display: none;
+}
+
+.container-header img {
+    width: 50px;
+    height: 50px;
+}
+
+#logo-header {
+    width: 70px;
+    height: 70px;
+}
+
+.container-header button {
+    background-color: rgba(2, 2, 2, 0);
+    border: none;
+}
+
+#menuburguer {
+    display: none;
+}
+
+.menu {
+    width: 60vw;
+    max-width: 1020px;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.menu a {
+    font-family: 'kanit';
+    font-weight: bold;
+    font-size: 20px;
+
+    text-decoration: none;
+
+    color: white;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+}
+
+#vid-fundo {
+    margin-top: 60px;
+    height: 620px;
+    width: 100%;
+    
+    filter: blur(8px);
+    z-index: -1;
+}
+
+#vid-frente {
+    height: 552px;
+    width: 968px;
+
+    position: absolute;
+
+    margin: 120px auto;
+}
+
+.fundo {
+    background-image: url(img/fundoclaro.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 560px;
+}
+
+.fundo h3 {
+    margin-top: 90px;
+}
+
+.fundo p {
+    width: 60vw;
+    margin-top: 60px;
+}
+
+.fundo button {
+    background-color: #AA39A5;
+    border: none;
+    border-radius: 5px;
+
+    width: 540px;
+    height: 80px;
+
+    font-size: 30px;
+    font-family: 'kanit';
+    font-weight: bold;
+
+    margin-top: 110px;
+}
+
+#cases {
+    background-color: #D4D4D4;    
+}
+
+#cases h2 {
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+.case {
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    padding-top	: 20px;
+    padding-bottom: 50px;
+}
+
+.case div {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-right: 100px;
+}
+
+.case div h4 {
+    margin-bottom: 30px;
+}
+
+
+#caseu {
+    padding-bottom: 130px;
+}
+
+.fundo2 {
+    background-image: url(img/fundoclaro.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 1450px;
+}
+
+#sobre .container-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre {
+    width: 60vw;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 100px;
+    margin-bottom: 210px;
+}
+
+.sobre h3 {
+    margin-bottom: 90px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    height: 680px;
+    min-width: 680px;
+
+    border-radius: 50px;
+    border-color: #AA39A5;
+    border-style: solid;
+    border-width: 10px;
+
+    background-color: #F0F0F0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container-form {
+    width: 80%;
+}
+
+form label {
+    font-family: 'kanit';
+    font-weight: bold;
+    font-size: 24px;
+
+    margin-top: 35px;
+}
+
+form input,form textarea {
+    border-style: solid;
+    border-color: #AA39A5;
+    border-width: 3px;
+    border-radius: 5px;
+
+    font-size: 24px;
+    font-family: 'titillium web';
+    font-weight: bold;
+}
+
+.nome-email {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    margin-bottom: 25px;
+}
+
+.nome-email input {
+    height: 60px;
+    width: 540;
+}
+
+#nome {
+    margin-bottom: 15px;
+    margin-top: 35px;
+}
+
+.assunto {
+    display: flex;
+    flex-direction: column;
+}
+
+.assunto textarea {
+    height: 200px;
+
+    outline: none;
+
+    resize: none;
+}
+
+#ajuda {
+     width: 640px;
+     margin-left: 60px;
+     margin-right: 60px;
+}
+
+#ajuda h3 {
+    margin-top: 60px;
+    margin-bottom: 45px;
+}
+
+footer {
+    border-top: solid;
+    border-color: #AA39A5;
+    border-width: 10px      ;
+
+    height: 370px;
+
+    background-color: #1B1B1B;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: white;
+}
+
+#flogo {
+    display: flex;
+    flex-direction: column;
+}
+
+#flogo img {
+    width: 256px;
+    height: 256px;
+}
+
+#redes h3 {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+#redes :nth-child(3) {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#termos {
+    display: flex;
+    flex-direction: column;
+}
+
+#termos :first-child {
+    margin-bottom: 65px;
+}
+
+#termos a {
+    font-size: 24px;
+    font-family: 'kanit';
+    font-weight: bold;
+
+    color: white;
+    text-decoration-line: none;
+}
+
+@media screen and (max-width: 1700px) {
+
+    .fundo2 {
+        height: 1700px ;
+    }
+
+    .sobre {
+        margin-bottom: 40px;
+        margin-top: 80px;
+    }
+    
+    .sobre h3 {
+        margin-bottom: 60px;
+    }
+    
+    .sobre p {
+        width: 70vw;
+        max-width: 1400px;
+    }
+    
+    #ajuda {
+        width: 80vw;
+        max-width: 1400px;
+        
+        margin-bottom: 80px;
+    }
+
+    #formulario {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #formulario form {
+        width: 800px ;
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+    
+    #cases h2 {
+        padding-bottom: 50px;
+    }
+
+    .case {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .case div {
+        width: 60vw;
+
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .fundo button {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    
+    p {
+
+        line-height: 30px;
+
+        font-size: 20px;
+    }
+
+    #ajuda {
+        margin-bottom: 70px;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    
+    
+    
+    #vid-fundo {
+        height: 400px;
+    }
+
+    #vid-frente {
+        height: 340px;
+        width: 593px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
+    
+    h4 {
+        font-size: 30px;
+    }
+    
+    p {
+        font-size: 18px;
+    
+    }
+
+    .nome-email label , .assunto label {
+        font-size: 20px;
+    }
+
+    #nome {
+        margin-top: 20px;
+    }
+
+    #formulario form {
+        height: 640px ;
+    }
+
+    #menuburguer {
+        display: unset;
+    }
+
+    nav.menu {
+        height: 450px;
+        width: 280px;
+
+        padding: 0px 30px;
+        
+        flex-direction: column;
+        justify-content: space-around;
+
+        background-color: #000000;
+
+        position: absolute;
+        top: 70px;
+        right: 0px;
+
+
+        display: none;
+
+
+    }
+
+    #flogo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #flogo p {
+        font-size: 12px;
+    }
+
+    #redes h3 {
+        font-size: 16px;
+    }
+
+    #redes a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #termos a {
+        font-size: 16px;
+    }
+
+    #redes :nth-child(3) {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+}
+
+@media screen and (max-width:810px) {
+    p {
+        line-height: 25px;
+    }
+
+    #formulario form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:740px) {
+
+    .sobre {
+        margin: unset;
+    }
+
+    .case img {
+        width: 520px;
+    }
+
+    #formulario form {
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width:710px) {
+    
+    #vid-fundo {
+        height: 330px;
+    }
+
+
+    #vid-frente {
+        width: 479px;
+        height: 269px;
+    }
+    
+    h2 {
+        font-size: 34px;
+    }
+    
+    h3 {
+        font-size: 26px;
+    }
+    
+    h4 {
+        font-size: 26px;
+    }
+    
+    p {
+        font-size: 15px;
+    
+    }
+
+    .fundo2 {
+        height: 1500px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .fundo button {
+        width: 480px;
+        height: 70px;
+    }
+
+    form {
+        background-color: unset;
+
+        min-width: 0;
+    }
+    
+    .nome-email input, .assunto textarea {
+        width: 80%s;
+    }
+
+    .fundo2 {
+        height: 1600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* * {
+        overflow-x: auto;
+    } */
+
+    .container-grid {
+        width: 100vw;
+    }
+
+    #vid-fundo {
+        height: 270px;
+    }
+
+    #vid-frente {
+        width: 400px;
+        height: 210px;
+    }
+
+    .fundo button {
+        width: 400px;
+        height: 60px;
+
+        font-size: 18px;
+    }
+
+    #caseu {
+        padding-bottom: 50px    ;
+    }
+
+    .case img {
+        width: 400px;
+    }
+
+    .fundo h3 {
+        margin-top: 50px;
+    }
+
+    .fundo {
+        height: 500px;
+    }
+
+
+
+    #sobre .container-grid {
+        width: 80vw;
+    }
+
+    #formulario {
+        max-width: 100vw;
+    }
+
+    .nome-email input {
+        height: 40px;
+    }
+
+    .assunto textarea {
+
+        height: 120px;
+    }
+
+    form label {
+        margin-top: 25px;
+    }
+
+    .fundo2 {
+        height: 1700px;
+    }
+
+    .nome-email input , .assunto textarea {
+        font-size: 16px;
+    }
+
+    #termos a {
+        font-size: 10px;
+    }
+
+    #redes h3 {
+        font-size: 10px;
+    }
+
+    #redes a img {
+        height: 20px;
+        width: 20px;
+    }
+
+    #flogo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        height: 270px;
+    }
+    
+    #logo-header {
+        width: 50px;
+        height: 50px;
+    }
+
+    .container-header img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .container-header {
+        width: 90vw;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    
+    p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+
+    .case img {
+        width: 300px;
+    }
+
+    .fundo button {
+        width: 250px;
+        height: 50px;
+        margin-top: 50px;
+    }
+
+    #vid-frente {
+        width: 252px;
+        height: 143px;
+    }
+
+    #vid-fundo {
+        height: 205px;
+    }
+
+    .fundo2 {
+        height: 1400px;
+    }
+
+    .nome-email label {
+        font-size: 15px;
+    }
+
+    .nome-email input {
+        font-size: 12px;
+    }
+
+    .assunto label {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:340px) {
+
+    .fundo2 {
+        height: 1480px;
+    }
+
+
+}
