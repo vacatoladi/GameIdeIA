@@ -14,13 +14,14 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="container-header">
             <img src="img/logo.svg" alt="Logo da empresa GameIdeIA" id="logo-header">
-            <nav class="menu">
+            <nav id="menu">
                 <a href="#portfolio">Portfólio<br>da Empresa</a>
                 <a href="#cases">Cases de<br>Sucesso</a>
                 <a href="#sobre">Sobre</a>
@@ -32,8 +33,9 @@
             <button id="tema-claro">
                 <img src="img/dia.svg" alt="">
             </button>
-            <button id="menuburguer">
-                <img src="img/menu.svg" alt="">
+            <button id="menuburguer" onclick="abrirFecharMenu()">
+                <img id="icone-barras" src="img/menu.svg" alt="">
+                <img id="icone-x" src="img/x.svg" alt="">
             </button>
         </div>
     </header>
@@ -81,7 +83,7 @@
 
 
             <div id="formulario">
-                <form>
+                <form onsubmit="solicitarOrcamento(event)" >
                     <div class="container-form">
                         <h3>Formulário para contato</h3>
                         <div class="nome-email">
@@ -91,8 +93,9 @@
                         </div>
                         <div class="assunto">
                             <label for="">Assunto:</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <textarea name="" id="descricao" cols="30" rows="10"></textarea>
                         </div>
+                        <button onsubmit="" id="botao-form">Enviar</button>
                     </div>
                 </form>
                 <div id="ajuda">
